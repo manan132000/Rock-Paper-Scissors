@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Choose Mode</title>
+  <!-- Bootstrap script -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="back-option">
+  <a href="index.html#rules-section"><i class="fas fa-arrow-circle-left"></i></a> Back to Rules
+</div>
+
+  <div class="row card-container">
+    <div class="col-lg-6">
+      <div class="card mode-card easy-mode-card">
+        <img src="images/easy-mode-image.jpg" class="card-img-top mode-image" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Beginner Mode</h4>
+          <a href="#select-points" class="mode-select-btn easy-mode-select-btn btn btn-outline-dark">Select</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card mode-card hard-mode-card">
+        <img src="images/hard-mode-image.jpg" class="card-img-top mode-image" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Advanced Mode</h4>
+          <a href="#select-points" class="mode-select-btn hard-mode-select-btn btn btn-outline-dark">Select</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="select-points">
+    <h3>Select the points upto which you want to play</h3>
+    <form action="game.html" method="GET">
+    <input id="points-5" type="checkbox" name="5"/> <label class="points-select" for="points-5">5</label>
+    <input id="points-10" type="checkbox" name="10"/> <label class="points-select" for="points-10">10</label>
+    <input id="points-15" type="checkbox" name="15"/> <label class="points-select" for="points-15">15</label>
+    <input id="points-20" type="checkbox" name="20"/> <label class="points-select" for="points-20">20</label>
+
+
+<div class="play-btn" class="custom-container">
+  <input class="btn btn-outline-dark" type="submit" value="Play" />
+</div>
+
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
+</body>
+
+</html>

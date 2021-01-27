@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Game</title>
+  <!-- Bootstrap script -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="alert('Do not refresh during the game')">
+
+  <div class="custom-container-icons">
+
+    <div class="row">
+      <div class="rock-div col-lg-4 col-sm-4 rock-col">
+        <i class="rock-icon easy-mode-icon rps-icon far fa-hand-rock">
+        </i><br>
+        <p> Rock </p>
+      </div>
+      <div class="paper-div col-lg-4 col-sm-4 paper-col">
+        <i class="paper-icon easy-mode-icon rps-icon far fa-hand-paper">
+        </i><br>
+        <p> Paper </p>
+      </div>
+      <div class="scissors-div col-lg-4 col-sm-4 scissors-col">
+        <i class="scissors-icon easy-mode-icon rps-icon far fa-hand-scissors">
+        </i><br>
+        <p> Scissors </p>
+      </div>
+
+    </div>
+  </div>
+
+  <br>
+
+
+  <div class="row custom-container">
+    <div class="col-sm-6">
+      <div class="hand">
+        <img class="hand-image myHand" src="images/rock.jpg" alt="">
+      </div>
+      <h3>YOU</h3>
+      <h5 class="myScore">0</h5>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="hand">
+        <img class="hand-image compHand" src="images/rock.jpg" alt="">
+      </div>
+      <h3>COMPUTER</h3>
+      <h5 class="compScore">0</h5>
+    </div>
+
+  </div>
+
+  <section id="after-match">
+    <p class="result"></p>
+
+    <div class="row custom-container">
+      <div class="col-lg-6">
+        <a href=""><button type="button" class="btn-play-again btn btn-outline-dark">Play Again</button></a>
+      </div>
+      <div class="col-lg-6">
+        <a href="mode.html"><button type="button" class="btn-change-settings btn btn-outline-dark">Change Settings</button></a>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
+</body>
+
+</html>
